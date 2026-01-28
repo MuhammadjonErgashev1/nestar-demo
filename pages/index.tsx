@@ -8,16 +8,19 @@ import { NextPage } from "next";
 const Home: NextPage=() => {
   return (
     <>
-       {/* <Stack sx={{background: "#81c784" }}>Header</Stack> */}
-       <Container>
+     <Container>
         <Stack flexDirection={"column"}>
-          <Box>Popular properties</Box>
-          <Box>Top Agents</Box>
-          <Box>Top Properties</Box>
-          <Box>Events</Box>
+          <Stack>
+            <Stack className="container">Popular properties</Stack>
+          </Stack>
+          <Stack>
+            <Stack className="container">Top Agents</Stack>
+          </Stack>
+          <Stack>
+            <Stack className="container">Top Properties</Stack>
+          </Stack>
         </Stack>
-       </Container>
-       {/* <Stack sx={{background: "#a1887f" }}>Header</Stack> */}
+       </Container> 
     </>
   );
 }
